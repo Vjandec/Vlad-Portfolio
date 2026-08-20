@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLAD — Technical Operations Specialist</title>
+<meta name="description" content="VLAD — Technical Operations Specialist. Mobile device systems, dating app operations, social media management, and workflow design.">
+
+<!-- ============================================================
+     FONTS
+     Display: Cinzel — a carved, monumental serif (castle stonework, not "spooky")
+     Body:    Manrope — clean, modern, quiet
+     Utility: JetBrains Mono — labels, eyebrows, data
+============================================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Favicon: custom fanged "V" mark, inline SVG data URI -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Cpath d='M14 16 L32 46 L26 46 L20 26 L20 46 L14 46 Z' fill='%23C9A227'/%3E%3Cpath d='M50 16 L32 46 L38 46 L44 26 L44 46 L50 46 Z' fill='%238B0000'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     LOADER
+============================================================= -->
+<div id="loader">
+  <div class="loader-mark">VL<span class="fang">A</span>D</div>
+  <div class="loader-bar"></div>
+  <div class="loader-label">Entering the estate</div>
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div id="spotlight"></div>
+<div id="progress-bar"></div>
+
+<!-- ============================================================
+     NAV
+============================================================= -->
+<header id="site-header">
+  <a href="#hero" class="logo">VL<span class="fang-a">A</span>D</a>
+  <nav class="links">
+    <a href="#about">About</a>
+    <a href="#specialization">Specialization</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <div class="moon-progress" title="Scroll progress"><div class="fill" id="moon-fill"></div></div>
+    <a href="#contact" class="btn-hire">Hire Me</a>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO
+============================================================= -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="blood-moon"></div>
+  <div class="hero-fog"></div>
+
+  <div class="castle-silhouette">
+    <svg viewBox="0 0 1440 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#020202" d="M0,300 L0,180 L40,180 L40,140 L60,140 L60,180 L100,180 L100,110 L120,90 L140,110 L140,180 L200,180 L200,150 L215,150 L215,120 L230,120 L230,150 L245,150 L245,180 L320,180 L320,60 L335,40 L350,60 L350,100 L365,100 L365,60 L380,40 L395,60 L395,180 L470,180 L470,140 L485,140 L485,120 L500,120 L500,140 L515,140 L515,180 L620,180 L620,90 L640,70 L660,90 L660,180 L760,180 L760,50 L780,20 L800,50 L800,140 L815,140 L815,110 L830,110 L830,140 L845,140 L845,180 L950,180 L950,120 L965,120 L965,95 L980,95 L980,120 L995,120 L995,180 L1090,180 L1090,150 L1105,150 L1105,130 L1120,130 L1120,150 L1135,150 L1135,180 L1260,180 L1260,80 L1280,55 L1300,80 L1300,180 L1440,180 L1440,300 Z"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="eyebrow reveal in">Technical Operations · Est. Estate of Precision</div>
+    <h1 class="reveal in reveal-delay-1">VL<span class="fang">A</span>D</h1>
+    <div class="hero-role reveal in reveal-delay-2">Technical Operations Specialist</div>
+    <div class="hero-typing reveal in reveal-delay-3"><span id="typed-text"></span><span class="cursor-blink">|</span></div>
+
+    <div class="hero-ctas reveal in reveal-delay-4">
+      <a href="#projects" class="btn btn-primary" data-hover>Explore Portfolio</a>
+      <a href="#contact" class="btn btn-ghost" data-hover>Hire Me</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><div class="line"></div>Descend</div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+============================================================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+     <div class="about-portrait reveal">
+  <img src="images/profile.jpg" alt="Vlad - Technical Operations Specialist">
+</div>
+      <div class="about-body">
+        <div class="eyebrow reveal">Who I Am</div>
+        <div class="section-head" style="margin-bottom:1.6rem;">
+          <h2 class="reveal reveal-delay-1">Precision, disguised as instinct.</h2>
+        </div>
+        <p class="reveal reveal-delay-1">I'm <strong>Vlad</strong>, a technical operations specialist who builds the quiet systems behind fast-moving digital teams. My work sits at the intersection of <strong>mobile device management</strong>, <strong>platform operations</strong>, and <strong>workflow design</strong> — the infrastructure that lets a team scale without breaking.</p>
+        <p class="reveal reveal-delay-2">Over the years I've configured and maintained jailbroken iOS environments for testing and operational use, run day-to-day operations across dating and social platforms, and documented the processes that turn chaos into a repeatable system. I don't just execute tasks — I build the SOP that makes the next person's job easier.Each area below is a system I've operated, refined, and documented —
+  built to run without me hovering over it.</p>
+        <p class="reveal reveal-delay-3">Every engagement gets the same standard: clean documentation, measurable process improvement, and operational discretion. Agencies and founders bring me in when they need someone who can own a workflow end-to-end — and disappear into the results.</p>
+
+        <div class="about-stats">
+          <div class="stat reveal"><div class="num">5+</div><div class="lbl">Devices Managed</div></div>
+          <div class="stat reveal reveal-delay-1"><div class="num">10+</div><div class="lbl">Platforms Operated</div></div>
+          <div class="stat reveal reveal-delay-2"><div class="num">100%</div><div class="lbl">Documented Workflows</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SPECIALIZATION
+============================================================= -->
+<section id="specialization">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow reveal">Specialization</div>
+      <h2 class="reveal reveal-delay-1">Five disciplines. One standard.</h2>
+      <p class="reveal reveal-delay-2">Each area below is a system I've operated, refined, and documented — built to run without me hovering over it.</p>
+    </div>
+
+    <div class="spec-grid">
+      <div class="spec-card reveal" data-tilt>
+        <div class="spec-index">01 / Mobile Systems</div>
+        <h3>Mobile Device Specialist</h3>
+        <p class="spec-desc">End-to-end management of jailbroken iOS environments — setup, configuration, and ongoing troubleshooting for teams that need mobile infrastructure that just works.</p>
+        <div class="spec-tags">
+          <span>Jailbroken iOS</span><span>Device Setup</span><span>Configuration</span><span>Troubleshooting</span><span>Mobile QA</span>
+        </div>
+      </div>
+
+      <div class="spec-card reveal reveal-delay-1" data-tilt>
+        <div class="spec-index">02 / Platform Ops</div>
+        <h3>Dating App Operations</h3>
+        <p class="spec-desc">Operational workflows and account management across major dating platforms — built around documentation, quality assurance, and organized process, not guesswork.</p>
+        <div class="spec-platforms">
+          <div class="platform-chip"><span class="dot"></span>Tinder</div>
+          <div class="platform-chip"><span class="dot"></span>Bumble</div>
+          <div class="platform-chip"><span class="dot"></span>Hinge</div>
+        </div>
+      </div>
+
+      <div class="spec-card reveal reveal-delay-2" data-tilt>
+        <div class="spec-index">03 / Community</div>
+        <h3>Social Media Management</h3>
+        <p class="spec-desc">Community management, content organization, and performance tracking across social platforms — turning scattered activity into a measured growth process.</p>
+        <div class="spec-platforms">
+          <div class="platform-chip"><span class="dot"></span>Instagram</div>
+          <div class="platform-chip"><span class="dot"></span>Threads</div>
+          <div class="platform-chip"><span class="dot"></span>Reddit</div>
+        </div>
+      </div>
+      <div class="spec-card reveal reveal-delay-1" data-tilt>
+  <div class="spec-index">05 / Video Editing</div>
+  <h3>Short-Form Video Editing</h3>
+  <p class="spec-desc">
+    Editing short-form content for TikTok, Instagram Reels, and YouTube Shorts —
+    focused on strong hooks, clean pacing, captions, and retention.
+  </p>
+  <div class="spec-tags">
+    <span>TikTok</span>
+    <span>Instagram Reels</span>
+    <span>YouTube Shorts</span>
+    <span>Captions</span>
+    <span>Content Repurposing</span>
+  </div>
+</div>
+
+      <div class="spec-card reveal reveal-delay-3" data-tilt>
+        <div class="spec-index">04 / Agency Support</div>
+        <h3>Creator Agency Operations</h3>
+        <p class="spec-desc">Operational and administrative support for creator management agencies — documentation, team coordination, and process improvement behind the scenes.</p>
+        <div class="spec-tags">
+          <span>Ops Support</span><span>Admin</span><span>Documentation</span><span>Team Coordination</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+============================================================= -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow reveal">Toolkit</div>
+      <h2 class="reveal reveal-delay-1">The instruments of the estate.</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skills-col reveal">
+        <h4>Technical</h4>
+        <div class="skill-row" data-skill="92"><div class="top"><span>HTML</span><span>92%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="88"><div class="top"><span>CSS</span><span>88%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="80"><div class="top"><span>JavaScript</span><span>80%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="90"><div class="top"><span>VS Code</span><span>90%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="85"><div class="top"><span>GitHub</span><span>85%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="94"><div class="top"><span>Canva</span><span>94%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="96"><div class="top"><span>ChatGPT</span><span>96%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="95"><div class="top"><span>Claude</span><span>95%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="89"><div class="top"><span>Google Workspace</span><span>89%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="93"><div class="top"><span>Notion</span><span>93%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+      </div>
+
+      <div class="skills-col reveal reveal-delay-1">
+        <h4>Operations</h4>
+        <div class="skill-row" data-skill="97"><div class="top"><span>Documentation</span><span>97%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="91"><div class="top"><span>Research</span><span>91%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="95"><div class="top"><span>Problem Solving</span><span>95%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="88"><div class="top"><span>Project Management</span><span>88%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="96"><div class="top"><span>Workflow Design</span><span>96%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-row" data-skill="90"><div class="top"><span>Technical Support</span><span>90%</span></div><div class="skill-track"><div class="skill-fill"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+============================================================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+  
+      <div class="eyebrow featured-work-eyebrow reveal">Featured Work</div>
+      <h2 class="reveal reveal-delay-1">Systems built, not just tasks done.</h2>
+    </div>
+ <div class="projects-grid">
+    <div class="project-card reveal" data-modal="mobile">
+
+  <img 
+    class="project-image"
+    src="images/jailbroken-ios.jpg"
+    alt="Jailbroken iOS"
+  >
+
+  <div class="project-overlay"></div>
+  <div class="glow"></div>
+
+  <div class="project-tag">Mobile Systems</div>
+  <h4>Jailbroken iOS</h4>
+  <div class="view">View case →</div>
+
+</div>
+      <div class="project-card reveal reveal-delay-1" data-modal="dating">
+        <img 
+  class="project-image"
+  src="images/dating-app.jpg"
+  alt="Dating App Operations"
+>
+        <div class="glow"></div>
+        <div class="project-tag">Platform Ops</div>
+        <h4>Dating App Operations</h4>
+        <div class="view">View case →</div>
+      </div>
+      <div class="project-card reveal reveal-delay-2" data-modal="agency">
+        <img 
+  class="project-image"
+  src="images/google-workspace.jpg"
+  alt="Google Workspace"
+>
+        <div class="glow"></div>
+        <div class="project-tag">Agency Support</div>
+        <h4>Google workspace</h4>
+        <div class="view">View case →</div>
+      </div>
+      <div class="project-card reveal" data-modal="social">
+        <img 
+  class="project-image"
+  src="images/social-media.jpg"
+  alt="Social Media Management"
+>
+        <div class="glow"></div>
+        <div class="project-tag">Community</div>
+        <h4>Social Media Management</h4>
+        <div class="view">View case →</div>
+      </div>
+      <div class="project-card reveal reveal-delay-1" data-modal="workflow">
+       <img 
+  class="project-image"
+  src="images/snapchat.jpg"
+  alt="Snapchat VA"
+>
+        <div class="glow"></div>
+        <div class="project-tag">Specialist</div>
+        <h4>Snapchat VA</h4>
+        <div class="view">View case →</div>
+      </div>
+      <div class="project-card reveal reveal-delay-2" data-modal="sop">
+        <img 
+  class="project-image"
+  src="images/social-platforms.jpg"
+  alt="Instagram Reddit Threads"
+>
+        <div class="glow"></div>
+        <div class="project-tag">Mass Account</div>
+        <h4>Creating IG,REDDIT,THREADS</h4>
+        <div class="view">View case →</div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-modal="video">
+
+  <video
+    class="project-video"
+    id="short-video"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source src="videos/short-form-editing.mp4" type="video/mp4">
+  </video>
+
+  <button class="video-mute" id="video-mute" type="button">
+    🔇
+  </button>
+
+  <div class="project-overlay"></div>
+  <div class="glow"></div>
+
+  <div class="project-tag">Video Editing</div>
+  <h4>Short-Form Video Editing</h4>
+  <div class="view">View case →</div>
+
+</div>
+
+<!-- ============================================================
+     EXPERIENCE
+============================================================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow reveal">Experience</div>
+      <h2 class="reveal reveal-delay-1">A record, kept precisely.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-meta">Current</div>
+        <h4>Technical Operations Specialist</h4>
+        <p>Managing mobile device infrastructure and cross-platform operations for independent teams — configuration, troubleshooting, and process documentation as a single continuous system.</p>
+      </div>
+      <div class="tl-item reveal reveal-delay-1">
+        <div class="tl-meta">Ongoing</div>
+        <h4>Dating App Operations Support</h4>
+        <p>Handling day-to-day operational workflows across Tinder, Bumble, and Hinge — account management, documentation, and quality assurance for teams that need consistency at volume.</p>
+      </div>
+      <div class="tl-item reveal reveal-delay-2">
+        <div class="tl-meta">Ongoing</div>
+        <h4>Social Media Manager</h4>
+        <p>Running community management and content scheduling across Instagram, Threads, and Reddit, with performance tracking built into every cycle.</p>
+      </div>
+      <div class="tl-item reveal reveal-delay-3">
+        <div class="tl-meta">Ongoing</div>
+        <h4>Creator Agency Operations Support</h4>
+        <p>Providing administrative and operational support to a creator management agency — documentation, team coordination, and workflow improvement behind the scenes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="eyebrow reveal">Get In Touch</div>
+        <div class="section-head" style="margin-bottom:1.6rem;">
+          <h2 class="reveal reveal-delay-1">The estate is open for business.</h2>
+          <p class="reveal reveal-delay-2">Reach out through whichever channel you keep closest.</p>
+        </div>
+        <div class="contact-channels">
+          <a href="https://t.me/Awieblaze" class="channel reveal" target="_blank" rel="noopener"><span class="name">Telegram</span><span class="arrow">↗</span></a>
+          <a href="https://discord.gg/v8w253hu" class="channel reveal reveal-delay-1"><span class="name">Discord</span><span class="arrow">↗</span></a>
+          <a href="mailto:vladimirmlaguisma@gmail.com" class="channel reveal reveal-delay-2"><span class="name">Email — vladimirmlaguisma@gmail.com</span><span class="arrow">↗</span></a>
+          <a href="https://wa.me/" class="channel reveal reveal-delay-3"><span class="name">WhatsApp</span><span class="arrow">↗</span></a>
+        </div>
+      </div>
+
+      <form id="contact-form" class="reveal reveal-delay-1">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" placeholder="you@company.com" required>
+        </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" placeholder="What are you looking to build?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn" data-hover>Send Message</button>
+        <div class="form-note" id="form-note">Opens your email client — no data leaves this page.</div>
+      <form class="contact-form" action="https://formspree.io/f/mbgrwgpp" method="POST"></form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="tagline">"Darkness reveals precision."</div>
+  <div class="copy">© 2026 VLAD — All Rights Reserved</div>
+</footer>
+
+<!-- ============================================================
+     PROJECT MODAL
+============================================================= -->
+<div id="modal-backdrop">
+  <div class="modal">
+    <button class="modal-close" id="modal-close" type="button" aria-label="Close modal">
+      ×
+    </button>
+
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
