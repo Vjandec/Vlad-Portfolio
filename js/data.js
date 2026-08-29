@@ -116,7 +116,7 @@ var VladData = {
     {
       id: "edit-04",
       title: "Edit Sample 04",
-      src: "assets/videos/edit-04.MP4",
+      src: "assets/videos/edit-04.mp4",
       poster: "assets/images/edit-04-thumb.png"
     },
     {
