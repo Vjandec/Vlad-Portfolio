@@ -126,10 +126,7 @@ var VladData = {
       poster: "assets/images/edit-05-thumb.png"
     },
     {
-      id: "edit-06",
-      title: "CLAYPOTTTTT",
-      src: "assets/videos/edit-06.mp4",
-      poster: "assets/images/edit-06-thumb.png"
+   
     }
   ],
 
